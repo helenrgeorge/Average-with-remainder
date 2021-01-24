@@ -1,0 +1,41 @@
+using System;
+
+namespace Assignment_1_George
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter an integer score ");
+            string integer1 = Console.ReadLine(); /* input 1st number */
+            Console.Write("Enter an integer score ");
+            string integer2 = Console.ReadLine(); /* input 2nd number */
+            Console.Write("Enter an integer score ");
+            string integer3 = Console.ReadLine(); /* input 3rd number */
+
+            /* turn numbers to integers*/
+            int integer1_;
+            int integer2_;
+            int integer3_;
+
+
+            integer1_ = Convert.ToInt32(integer1);
+            integer2_ = Convert.ToInt32(integer2);
+            integer3_ = Convert.ToInt32(integer3);
+
+            /* find average */
+
+            int AverageInteger = ((integer1_ + integer2_ + integer3_) / 3);
+
+            /* find remainder */
+
+            int remainder = (integer1_ + integer2_ + integer3_) % 3;
+
+
+            /* print on screen as assignment advises */
+
+            Console.WriteLine("The average of " + integer1 + ", " + integer2 + ", " + integer3 + " is" + " " + AverageInteger + " with a remainder of " + remainder);
+
+        }
+    }
+}
